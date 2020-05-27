@@ -693,8 +693,8 @@ class TimelapseRenderJob(object):
             self._post_render_script()
 
             # Delete preprocessed images.
-            if self.cleanAfterSuccess:
-                shutil.rmtree(self.temp_rendering_dir)
+           # if self.cleanAfterSuccess:
+            #    shutil.rmtree(self.temp_rendering_dir)
 
             if self._synchronize:
                 # Move the timelapse to the Octoprint timelapse folder.
